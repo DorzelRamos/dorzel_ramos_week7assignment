@@ -15,37 +15,65 @@
     <div class="basicFilt">
         <h2>Basic Filters</h2>
         <p id="jqFilter"> Filters come after a semicolon (:) and can filter things by <i>first and last</i>, <i>odds and evens</i>, <i>gt (greater than), lt (less than), eq (equal to)</i>, <i>animated</i>, <i>focus</i>, and <i>not(expr), or non expressions</i></p>
+
+        <p class="para1">Here is another paragraph</p>
+        <p class="para2">Here is another paragraph</p>
     </div>
     <div class="advSelect">
         <h2>Advanced Selectors</h2>
         <p>When the <b>(>) selector</b> is used that means "select this tag only if its an immediate child of the parent". <b>Descendant selectors</b> select anything inside the element and doesn't have to be an immediate child. The <b>adjacent selector (+)</b>  means "select this element right after this element". The <b>(~) selector</b> means "select each element as long as it has this element as its sibling", so elements following the previous one will be selected.</p>
         <!-- For the (>) selector in the div element all of the paragraphs inside it are the immediate children, but if theres a section inside it all the paragraphs inside the section won't be selected -->
+
+        <p class="para1">Here is another paragraph</p>
+        <p class="para2">Here is another paragraph</p>
     </div>
     <div class="atrFilt">
         <h2>Attribute Filters</h2>
         <p>These lets you perform tests to see if attributes are being used. Attribute filters are used inside <b>[] brackets</b> after the tag. These can filter out classes and ids. The <b>(^=) filter</b> means pick out a name that starts with this string. The <b> (*=) filter</b> means pick out an element that contians this certain string</p>
+
+        <p class="para1">Here is another paragraph</p>
+        <p class="para2">Here is another paragraph</p>
     </div>
 
-    <div>
+    <div class="advFilt">
         <h2>Advanced Filters</h2>
         <p>The <b>contains filter</b> selects elements with a certain text. The <b>parent filter</b> means "select these tags as long as their parents". So anything with a child or a textnode is considered a parent. The <b>has filter</b> selects paragraphs with a certain class. The <b>child filter</b> selects paragraph tags inside of an element. This can be used with <i>first</i>, <i>last</i>, and <i>last-type-of</i>. The <b>n-th filter</b> selects the number of the child inside an element. So if a paragraph is the third child of an element it can select the third child</p>
+
+        <p class="para1">Here is another paragraph</p>
+        <p class="para2">Here is another paragraph</p>
     </div>
 
-    <div>
+    <div class="domJ">
         <h2>Going through the DOM with JQuery</h2>
         <p> You can tranverse through the HTML using different functions. There's <b>children()</b>, <b>parents()</b>, <b>next()</b>, <b>each()</b>, and more </p>
+
+        <p class="para1">Here is another paragraph</p>
+        <p class="para2">Here is another paragraph</p>
     </div>
 
-    <div>
+    <div class="chain">
         <h2>JQuery Statement Chaining</h2>
         <p>You can write multiple functions on a single line of code with JQuery</p>
+
+        <p class="para1">Here is another paragraph</p>
+        <p class="para2">Here is another paragraph</p>
     </div>
 
-    <div>
+    <div class="otherStuff" id="stuff">
         <h2>Other  functions are <b>css()</b>, <b>append()</b>, <b>prepend()</b>, <b>text(), and more</h2>
+            <p class="para1">Here is another paragraph</p>
+            <p class="para2">Here is another paragraph</p>
+            <p id="para3">Here is another paragraph</p>
+            <p class="para4">Here is another paragraph</p>
+            <!--When I tried getting the children from the otherStuff id set, they didn't turn purple until I erased the space. Could be a nesting thing?-->
     </div>
 
 
-    <script src="javaScript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery-3.6.1.miin.js"><\/script>')
+</script>
+<script src="javaScript/app.js"></script>
 </body>
 </html>
